@@ -4,6 +4,8 @@ FILE=/var/crashplan/.ui_info
 
 if [ -f $FILE ];
 then
+   mkdir data
+   mkdir data/id
    cp $FILE /srv/crashplan/data/id/
 fi
 
